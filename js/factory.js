@@ -10,7 +10,7 @@ app.factory("myFactory", function($q, $http) {
         )
         .then(
           data => {
-            console.log("json recieved is=", data);
+            console.log("json recieved is=", data.data);
             deferedObj.resolve(data.data);
           },
           error => {

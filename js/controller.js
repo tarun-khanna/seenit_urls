@@ -1,9 +1,8 @@
 app.controller("myController", function($scope, myFactory) {
   console.log("inside controller...");
-  $scope.list = "this is the list";
+  $scope.list = "list of latest seenit URLS";
   let res = myFactory.apiCall();
   res.then(function(data) {
-    console.log("data recieved in controller is =", data);
-    $scope.quest_urls = data;
+    $scope.quests = data;
   });
 });

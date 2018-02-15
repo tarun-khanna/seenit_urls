@@ -13,9 +13,10 @@
 </head>
 
 <body ng-app="myApp" ng-controller="myController">
-    <p>{{list}}</p>
-    <div ng-repeat="url in quest_urls"></div>
-    <a id={{url.quest_id}}>{{url.quest_url}}</a>
+    <h1>{{list}}</h1>
+    <div ng-repeat="quest in quests">
+        <a href="{{quest.quest_url}}" id={{quest.quest_id}}>{{quest.quest_url}}</a>
+    </div>
 </body>
 
 </html>
