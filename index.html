@@ -14,6 +14,8 @@
 
 <body ng-app="myApp" ng-controller="myController">
     <p>{{list}}</p>
+    <div ng-repeat="url in quest_urls"></div>
+    <a id={{url.quest_id}}>{{url.quest_url}}</a>
 </body>
 
 </html>

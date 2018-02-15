@@ -4,5 +4,6 @@ app.controller("myController", function($scope, myFactory) {
   let res = myFactory.apiCall();
   res.then(function(data) {
     console.log("data recieved in controller is =", data);
+    $scope.quest_urls = data;
   });
 });
